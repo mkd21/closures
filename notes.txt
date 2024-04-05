@@ -1,0 +1,17 @@
+lets say there are many varibles inside the parent function but the clild function is using only 1 variable, then the closure will be formed with that 1 variable only and not will all the variables 
+
+ex 
+
+function parent()
+{
+    let a = 23;
+    let b = 12;
+    let c = 90;
+
+    function child()    ---> will form closure with b variable only 
+    {
+        console.log(b);
+    }
+
+    return child;
+}
