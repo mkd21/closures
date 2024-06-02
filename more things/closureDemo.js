@@ -28,4 +28,6 @@ function outer()
 
 
 let res = outer();
-console.log(res());
+res();
+
+console.dir(res);
